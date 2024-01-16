@@ -14,19 +14,139 @@
     <meta name="twitter:title" content="Pranit Zambre">
     <meta name="twitter:url" content="https://www.pranitzambre.com">
     <meta name="twitter:card" content="summary">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="x-icon" href="svgs/love.svg">
     <title>Pranit Zambre</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+
+        html{
+            margin: 0px 10px 0px 10px;
+            padding: 0px 10px 0px 10px;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        body{
+            background-color: #ffffff;
+            color: #000000;
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            text-wrap: pretty;
+            cursor: url('svgs/lovecursor.svg') 0 0, auto;
+        }
+        p, ol {
+            color: #6b7280;
+            text-align: left;
+        }
+
+        .contacts a img {
+            padding: 0px 5px 5px 0px;
+            margin: 0px 5px 5px 0px;
+            width: 34px;
+            height: 34px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contacts a:hover img {
+            transform: scale(1.15);
+        }
+
+        .email {
+            width: 34px;
+            height: 34px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .email:hover{
+            transform: scale(1.1);
+        }
+
+        .skillslist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skillslist li {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .skillslist li div {
+            background-color: #6b7280;
+            color: #fff;
+            border-radius: 5px;
+            padding: 6px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .skillslist li div:hover {
+            transform: scale(1.1);
+            background-color: #000000;
+            
+        }
+
+        .books {
+            margin: 0px 0px 0px 10px;;
+            padding: 0px 0px 0px 10px;
+        }
+
+        .bookslist li {
+            padding: 3px;
+            margin: 3px;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+            transform-origin: left;
+        }
+
+        .bookslist li:hover {
+            transform: scale(1.1);
+            color: #000000;
+        }
+
+        .floatingbutton {
+            font-family: 'Roboto Mono', monospace;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .floatingbutton button {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #6b7280;
+            color: white;
+            padding: 8px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .floatingbutton button:hover {
+            background-color: black;
+            transform: scale(1.1);
+        }
+
+        .floating-button button.printing {
+            transform: scale(1.1);
+        }
+
+        @media print {
+            .floatingbutton {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="pranitzambre">
-        <h1>Pranit Zambre</h1>
-        <p>Also known as The Lovemachine, was born on April 11, 2003.</p>
+        <h3>Pranit Zambre</h3>
+        <p><h5 style="color: #6b7280;">Also known as The Lovemachine, was born on April 11, 2003.</h5></p>
 
         <div class="email">
-            <a href="mailto:pranit@email.com"><img src="svgs/email.svg" alt="email" height="40" width="40"></a><a href="mailto:pranit@email.com" style="color: black;">pranit@email.com</a>
+            <h5><a href="mailto:pranit@email.com"><img src="svgs/email.svg" alt="email" height="40" width="40"></a><a href="mailto:pranit@email.com" style="color: black;">pranit@email.com</a></h5>
         </div>
 
     </div>
@@ -38,42 +158,46 @@
         <a href="http://www.linkedin.com/thelovemachine" target="_blank" rel="noopener noreferrer"><img src="svgs/linkedin.svg" alt="linkedin"></a>
         <a href="http://www.x.com/pranitzambre" target="_blank" rel="noopener noreferrer"><img src="svgs/x.svg" alt="x"></a>
         <a href="http://www.youtube.com/@pranitzambre" target="_blank" rel="noopener noreferrer"><img src="svgs/youtube.svg" alt="youtube"></a>
+
     </div>
     
     <div class="about">
-        <h2>About</h2>
-        <p>Pranit Zambre, born on April 11, 2003, on Earth. Currently, I'm immersed in the world of InfoTech, pursuing my bachelor's degree as a passionate student. I thrive on critical thinking and problem-solving while exploring the fascinating realm of technology. Beyond academics, I have an extremely strong interest in global politics and economics, and I love cricket and football, where strategy and teamwork come together.</p>
+        <h3>About</h3>
+        <h5><p>Pranit Zambre, born on April 11, 2003, on Earth. Currently, I'm immersed in the world of InfoTech, pursuing my bachelor's degree as a passionate student. I thrive on critical thinking and problem-solving while exploring the fascinating realm of technology. Beyond academics, I have an extremely strong interest in global politics and economics, and I love cricket and football, where strategy and teamwork come together.</p></h5>
     </div>
     
     <div class="education">
-        <h2>Education</h2>
-        <h3>Maharashtra State Board</h3>
-        <p>Secondary School Certificate (SSC) - 91% (2019)</p>
-        <p>Higher Secondary School Certificate (HSC) - 91% (2021)</p>
-        <h3>Pune University</h3>
-        <p>Bachelor's Degree in Information Technology (2021 - 2025)</p>
+        <h3>Education</h3>
+        <h4>Maharashtra State Board</h4>
+        <h5><p>Secondary School Certificate (SSC) - 91% (2019)</p></h5>
+        <h5><p>Higher Secondary School Certificate (HSC) - 91% (2021)</p></h5>
+        <h4>Pune University</h4>
+        <h5><p>Bachelor's Degree in Information Technology (2021 - 2025)</p></h5>
     </div>
 
-    <h2>Skills</h2>
-    <div class="skills">
-        <ul class="skillslist">
-            <li><div>Common Sense</div></li>
-            <li><div>Critical Thinking</div></li>
-            <li><div>Problem Solving</div></li>
-            <li><div>Python</div></li>
-            <li><div>FS-JS</div></li>
-            <li><div>MongoDB</div></li>
-            <li><div>MySQL</div></li>
-        </ul>
-    </div>
+    <h3>Skills</h3>
+    <h4>
+        <div class="skills">
+            <ul class="skillslist">
+                <li><div>Common Sense</div></li>
+                <li><div>Critical Thinking</div></li>
+                <li><div>Problem Solving</div></li>
+                <li><div>Python</div></li>
+                <li><div>FS-JS</div></li>
+                <li><div>MongoDB</div></li>
+                <li><div>MySQL</div></li>
+            </ul>
+        </div>
+    </h4>
 
     <div>
-        <h2>Quotes</h2>
-        <P>Justice is an art which gives good to friends of morality and evil to enemies of morality.</P>
+        <h3>Quotes</h3>
+        <h5><p>Justice is an art which gives good to friends of morality and evil to enemies of morality.</p></h5>
     </div>
 
-    <h2>Favorite Books</h2>
-    <div class="books">
+    <h3>Favorite Books</h3>
+    <h5>
+            <div class="books">
         <ol class="bookslist" type="1">
             <li><a href="https://www.goodreads.com/book/show/61439040-1984" target="_blank" style="color: 6b7280; text-decoration: none;">1984</a></li>
             <li><a href="https://www.goodreads.com/book/show/170448.Animal_Farm" target="_blank" style="color: 6b7280; text-decoration: none;">Animal Farm</a></li>
@@ -87,6 +211,7 @@
             <li><a href="https://www.goodreads.com/book/show/44770129-ultralearning" target="_blank" style="color: 6b7280; text-decoration: none;">Ultralearning</a></li>
         </ol>
     </div>
+    </h5>
 
     <div class="floatingbutton" id="actionButton">
         <button onclick="print()">Print</button>
